@@ -1,0 +1,151 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8; /* Light gray-blue background */
+    color: #333; /* Dark gray text for readability */
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e3a5f; /* Deep navy blue */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: #f4f6f8; /* Light gray-blue text */
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    background-color: #2d4b73; /* Medium blue */
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2d4b73; /* Medium blue */
+    color: #f4f6f8; /* Light text for contrast */
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    color: #f4f6f8; /* Light gray-blue text */
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+    background-color: #1e3a5f; /* Deep navy blue */
+    color: white;
+    outline: none;
+}
+
+/* Main Content Styles */
+.maincontent {
+    margin-left: 220px; /* Adjusted for sidebar */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-left: 2px solid #d9e2ec; /* Light gray border */
+    color: #333; /* Dark gray text */
+    box-sizing: border-box;
+}
+
+.maincontent h1,
+.maincontent h2,
+.maincontent h3,
+.maincontent h4,
+.maincontent h5,
+.maincontent h6 {
+    color: #1e3a5f; /* Deep navy blue */
+    margin-top: 20px;
+}
+
+/* Links in Content */
+.maincontent a {
+    color: #1e3a5f; /* Deep navy blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.maincontent a:hover,
+.maincontent a:focus {
+    color: #2d4b73; /* Medium blue */
+    outline: none;
+}
+
+/* Image Styling */
+figure img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-size: 0.9em;
+    color: #666; /* Medium gray for captions */
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Box Model Example */
+.box-model {
+    padding: 15px;
+    background-color: #d9e2ec; /* Light gray-blue */
+    border: 5px solid #1e3a5f; /* Deep navy blue */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e3a5f; /* Deep navy blue */
+    color: #f4f6f8; /* Light gray-blue text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .maincontent {
+        margin-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
